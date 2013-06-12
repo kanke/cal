@@ -1,0 +1,122 @@
+search button for form4 button1
+
+
+            /*  this.Hide();
+              Form14 frm = new Form14();
+              frm.ShowDialog();
+              this.Show();
+
+
+              textBox1.Text = textBox1.Text.Trim();
+              if (textBox1.Text.Length == 0)
+              {
+                  MessageBox.Show("Please type something to search");
+                  return;
+              }
+
+              SqlConnection cnn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\kanke\Desktop\cal\cal\appoint.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
+              DataSet sch = new DataSet();
+              cnn.Open();
+
+              if (cnn.State == ConnectionState.Closed)
+              {
+                  MessageBox.Show("Connection Error !");
+                  return;
+              }
+              int x=-1;
+
+              //connectn sql cmd to d main connectn
+              SqlCommand q = new SqlCommand();
+              q.Connection = cnn;
+
+              q.CommandType = CommandType.Text;
+
+              q.CommandText = "select * from call where id=@id";
+              q.Parameters.Add("@id", SqlDbType.Int).Value = x;
+            
+              SqlDataReader dr;
+              dr = q.ExecuteReader();
+
+              if (!dr.HasRows)
+              {
+                  MessageBox.Show("There is no such person with this name (" + textBox1.Text + ")");
+                  textBox1.Clear();
+                  textBox2.Clear();
+                  textBox1.Focus();
+                  comboBox2.SelectedIndex = -1;
+                  comboBox1.SelectedIndex = -1;
+                  return;
+              }
+
+              // definitely I have one record and have to read from it.
+
+              dr.Read();
+              textBox1.Text = dr["name"].ToString();
+           
+
+              dr.Close();
+              cnn.Close();
+
+          }
+              */
+
+
+button2
+
+ /* this.Hide();
+            Form14 frm = new Form14();
+            frm.ShowDialog();
+            this.Show();
+
+            textBox2.Text = textBox2.Text.Trim();
+            if (textBox2.Text.Length == 0)
+            {
+                MessageBox.Show("Please type something to search");
+                return;
+            }
+
+            SqlConnection cnn = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\kanke\Desktop\cal\cal\appoint.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
+            DataSet sch = new DataSet();
+            cnn.Open();
+
+            if (cnn.State == ConnectionState.Closed)
+            {
+                MessageBox.Show("Connection Error !");
+                return;
+            }
+
+            //connectn sql cmd to d main connectn
+            SqlCommand q = new SqlCommand();
+            q.Connection = cnn;
+
+            q.CommandType = CommandType.Text;
+
+            q.CommandText = "select * from call where phoneno=@no";
+            q.Parameters.Add("@no", SqlDbType.NVarChar, 50).Value = textBox2.Text.Trim();
+
+            SqlDataReader dr;
+            dr = q.ExecuteReader();
+
+            if (!dr.HasRows)
+            {
+                MessageBox.Show("There is no such person with this phone number (" + textBox2.Text + ")");
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox1.Focus();
+                comboBox2.SelectedIndex = -1;
+                comboBox1.SelectedIndex = -1;
+                return;
+            }
+
+            // definitely I have one record and have to read from it.
+
+            dr.Read();
+            textBox2.Text = dr["phoneno"].ToString();
+
+
+            dr.Close();
+            cnn.Close();
+
+            
+        }*/
+       
